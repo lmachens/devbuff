@@ -1,3 +1,21 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-background: #080a0b;
+  --color-text: #fff;
+  --color-inverted: #000604;
+  --color-primary: #0dda95;
+  --color-secondary: #337275;
+
+  /* Misc */
+  --border-radius: 0.2rem;
+}
+
 html,
 body {
   padding: 0;
@@ -6,11 +24,37 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+button,
+.button,
+input[type="submit"] {
+  background: var(--color-primary);
+  color: var(--color-inverted);
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 1em 2em;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }

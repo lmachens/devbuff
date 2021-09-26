@@ -1,0 +1,11 @@
+.badge {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 0.2rem 0.5rem;
+  transition: 0.2s opacity ease;
+  opacity: 0.8;
+}
+
+.badge:hover {
+  opacity: 1;
+}
