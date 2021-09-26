@@ -19,11 +19,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.hero__info}>
-            <h2 className={styles.title}>Deine Zukunft als Web Developer</h2>
+            <h2 className={styles.title}>Dein Weg zum Web Developer</h2>
 
             <p className={styles.description}>
-              Level up als Freelancer in unserem 12 Wochen Remote Web Developer
-              Bootcamp.
+              Starte deine Karriere als Freelancer in unserem 12 Wochen Remote
+              Web Developer Bootcamp.
             </p>
 
             <a href="#start" className={`button ${styles.hero__start}`}>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
             </p>
             <p>
               Aus diesem Grund möchten wir mit dir über deine Motivation
-              sprechen und dich kennen lernen, damit wir die Kursinhalte optimal
+              sprechen und dich kennenlernen, damit wir die Kursinhalte optimal
               auf alle Teilnehmer*innen zuschneiden können.
             </p>
             <p>
@@ -85,22 +85,32 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={styles.phase}>
+          <div className={styles.phase__image}>
+            <Image
+              src="/support.png"
+              alt="Support"
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
           <div className={styles.phase__info}>
             <h2>Das Bootcamp startet</h2>
             <p>
-              Jetzt geht es los! Die nächsten 12 Wochen wirst du deine Web
-              Developer Skills aufbauen und von Tag 1 im Code-Editor arbeiten
+              Jetzt geht es los! Die nächsten 12 Wochen wirst du deine Skills
+              als Web Developer aufbauen und von Tag 1 im Code-Editor arbeiten
               🤖.
             </p>
             <p>
               In den ersten 8 Wochen wirst du Montag bis Freitag von ca. 9-17
-              Uhr alle wichtigen Grundlagen kennen lernen und in Praxisprojekten
+              Uhr alle wichtigen Grundlagen kennenlernen und in Praxisprojekten
               anwenden. Im Pair-Programming arbeitest du mit den anderen
               Kursteilnehmer*innen zusammen um perfekt im Team arbeiten zu
               können.
             </p>
             <p>
-              Die letzten 4 Wochen nutzt du um an deinem Abschlussprojekt zu
+              Die letzten 4 Wochen nutzt du, um an deinem Abschlussprojekt zu
               arbeiten. Hierbei erarbeitest du dir neue Themen, setzt einen
               Fokus und baust dein Portfolio auf, um als Freelancer neue
               Projekte zu gewinnen.
@@ -115,19 +125,9 @@ const Home: NextPage = () => {
               <Badge>Git</Badge>
             </p>
           </div>
-          <div>
-            <Image
-              src="/support.png"
-              alt="Support"
-              layout="responsive"
-              width={1587}
-              height={1158}
-              objectFit="contain"
-            />
-          </div>
         </section>
         <section className={styles.phase}>
-          <div>
+          <div className={styles.phase__image}>
             <Image
               src="/launch-project.png"
               alt="Capstone"
@@ -147,8 +147,8 @@ const Home: NextPage = () => {
             </p>
             <p>
               Spannende Projekte findest du über verschiedene Portale,
-              Headhunter oder Kontakte, die du in den letzten 12 Wochen kennen
-              gelernt hast.
+              Headhunter oder Kontakte, die du in den letzten 12 Wochen
+              kennengelernt hast.
             </p>
             <a href="#start" className="button">
               Jetzt mehr erfahren
@@ -229,8 +229,9 @@ const Home: NextPage = () => {
           >
             Leon Machens
           </a>{" "}
-          | Keine Cross-Site trackers oder andere gruseligen Dinge |{" "}
-          <Link href="/legal">Impressum &amp; Datenschutz</Link>
+          | <Link href="/legal">Impressum &amp; Datenschutz</Link>
+          <br />
+          Ohne Cross-Site-Trackers oder andere gruseligen Dinge ❤️
         </small>
       </footer>
     </div>

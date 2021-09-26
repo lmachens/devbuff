@@ -43,10 +43,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-text);
+  font-size: 100%;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 115%;
+  }
 }
 
 body {
@@ -66,6 +73,7 @@ input[type="submit"] {
   text-transform: uppercase;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
+  font-size: 1.2rem;
 }
 
 button:disabled,
