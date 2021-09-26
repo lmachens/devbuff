@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import AppHeader from "../components/AppHeader";
 import Badge from "../components/Badge";
@@ -10,11 +9,6 @@ import RegistrationForm from "../components/RegistrationForm";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>DevBuff</title>
-        <meta name="description" content="DevBuff coding bootcamp" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <AppHeader />
       <main className={styles.main}>
         <section className={styles.hero}>

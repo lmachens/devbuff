@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import AppHeader from "../components/AppHeader";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
@@ -7,11 +6,6 @@ import Link from "next/link";
 const Legal: NextPage = () => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>DevBuff - Impressum</title>
-        <meta name="description" content="DevBuff coding bootcamp" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <AppHeader />
       <main className={styles.main}>
         <h4>Impressum</h4>
