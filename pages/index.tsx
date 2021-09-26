@@ -16,8 +16,8 @@ const Home: NextPage = () => {
             <h2 className={styles.title}>Dein Weg zum Web Developer</h2>
 
             <p className={styles.description}>
-              Starte deine Karriere als Freelancer in unserem 12 Wochen Remote
-              Web Developer Bootcamp.
+              Starte deine Karriere als Freelancer in unseren Remote Web
+              Developer Bootcamps.
             </p>
 
             <a href="#start" className={`button ${styles.hero__start}`}>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             Du lernst wie du als Freelancer durchstartest, spannende Projekte in
             dein Portfolio aufnimmst und dafür einen guten Stundensatz bekommst.
             Egal, ob du bereits Erfahrungen als Web Developer hast oder nicht,
-            das Bootcamp bereitet dich perfekt für deine Zukunft vor.
+            das Bootcamp bereitet dich perfekt auf deine Zukunft vor.
           </p>
         </section>
         <section className={styles.phase}>
@@ -57,10 +57,10 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.phase__info}>
-            <h2>Stell dich vor</h2>
+            <h2>1. Stell dich vor</h2>
             <p>
-              Wir möchten mit Talent*innen arbeiten, die hoch motiviert sind und
-              das Bootcamp mit erstaunlichen Ergebnissen absolvieren.
+              Wir möchten mit Talenten arbeiten, die hoch motiviert sind und das
+              Bootcamp mit erstaunlichen Ergebnissen absolvieren.
             </p>
             <p>
               Aus diesem Grund möchten wir mit dir über deine Motivation
@@ -90,9 +90,9 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.phase__info}>
-            <h2>Das Bootcamp startet</h2>
+            <h2>2. Das Bootcamp startet</h2>
             <p>
-              Jetzt geht es los! Die nächsten 12 Wochen wirst du deine Skills
+              Jetzt geht es los! Die nächsten 8-12 Wochen wirst du deine Skills
               als Web Developer aufbauen und von Tag 1 im Code-Editor arbeiten
               🤖.
             </p>
@@ -104,7 +104,8 @@ const Home: NextPage = () => {
               können.
             </p>
             <p>
-              Die letzten 4 Wochen nutzt du, um an deinem Abschlussprojekt zu
+              Falls du dich für die Projektphase entschieden hast, wirst du die
+              letzten 4 Wochen nutzen, um an deinem Abschlussprojekt zu
               arbeiten. Hierbei erarbeitest du dir neue Themen, setzt einen
               Fokus und baust dein Portfolio auf, um als Freelancer neue
               Projekte zu gewinnen.
@@ -132,7 +133,7 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.phase__info}>
-            <h2>Du hast es geschafft</h2>
+            <h2>3. Du hast es geschafft</h2>
             <p>
               Voller Stolz und mit einer guten Basis bist du bereit als
               Freelancer die ersten Projekte zu gewinnen. Du profitierst

@@ -58,8 +58,7 @@ function RegistrationForm() {
       </label>
       <label className={styles.form__label}>
         <span>
-          Wann kannst du starten und wie viel Zeit kannst du pro Woche
-          investieren?
+          Wann kannst du starten und wie viel Zeit kannst du investieren?
         </span>
         <textarea
           placeholder="Hast du z.B. Verpflichtungen, wodurch du nicht in Vollzeit dabei sein kannst?"
