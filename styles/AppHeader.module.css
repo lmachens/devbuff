@@ -6,4 +6,7 @@
 
 .link {
   color: var(--color-text);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.7rem;
 }
