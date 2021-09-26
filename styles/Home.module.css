@@ -45,6 +45,7 @@
 
 .phase__image {
   display: grid;
+  padding: 1em;
 }
 .phase__info {
   display: grid;

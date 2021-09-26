@@ -209,6 +209,46 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+        <section className={styles.phase}>
+          <div className={styles.phase__image}>
+            <Image
+              src="/recovery.png"
+              alt="Capstone"
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
+          <div className={styles.phase__info}>
+            <h2>Das wirst du lernen</h2>
+            <p>
+              Wir arbeiten agil und passen die Inhalte dem Kurs an. Als
+              Leitfaden kannst du dir aber folgende Wochenschwerpunkte
+              anschauen:
+            </p>
+            <p>
+              Woche 1: HTML, Shell, Git, VSCode, CSS
+              <br />
+              Woche 2: Design, Storybook, CSS Modules
+              <br />
+              Woche 3: JavaScript, Events, DOM-Manipulation
+              <br />
+              Woche 4: API, TypeScript
+              <br />
+              Woche 5: Backend, Node.js, Crypto, MongoDB
+              <br />
+              Woche 6: React, React Hooks
+              <br />
+              Woche 7: React Context, TypeScript Advanced
+              <br />
+              Woche 8: Agile, Kanban, Akquise
+            </p>
+            <a href="#start" className="button">
+              Jetzt mehr erfahren
+            </a>
+          </div>
+        </section>
         <section className={styles.start} id="start">
           <h2 className={styles.subtitle}>Jetzt mehr erfahren</h2>
           <RegistrationForm />
