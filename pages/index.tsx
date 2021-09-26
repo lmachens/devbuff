@@ -34,8 +34,9 @@ const Home: NextPage = () => {
               src="/web-developer.png"
               alt="Web Developer"
               layout="responsive"
-              width={700}
-              height={511}
+              width={695}
+              height={585}
+              objectFit="contain"
             />
           </div>
         </section>
@@ -50,13 +51,16 @@ const Home: NextPage = () => {
           </p>
         </section>
         <section className={styles.phase}>
-          <Image
-            src="/social.png"
-            alt="Social"
-            layout="responsive"
-            width={700}
-            height={511}
-          />
+          <div>
+            <Image
+              src="/social.png"
+              alt="Social"
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
           <div className={styles.phase__info}>
             <h2>Stell dich vor</h2>
             <p>
@@ -110,22 +114,28 @@ const Home: NextPage = () => {
               <Badge>Git</Badge>
             </p>
           </div>
-          <Image
-            src="/support.png"
-            alt="Support"
-            layout="responsive"
-            width={700}
-            height={511}
-          />
+          <div>
+            <Image
+              src="/support.png"
+              alt="Support"
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
         </section>
         <section className={styles.phase}>
-          <Image
-            src="/launch-project.png"
-            alt="Capstone"
-            layout="responsive"
-            width={700}
-            height={511}
-          />
+          <div>
+            <Image
+              src="/launch-project.png"
+              alt="Capstone"
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
           <div className={styles.phase__info}>
             <h2>Du hast es geschafft</h2>
             <p>
