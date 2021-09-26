@@ -5,6 +5,7 @@ import AppHeader from "../components/AppHeader";
 import Badge from "../components/Badge";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import RegistrationForm from "../components/RegistrationForm";
 
 const Home: NextPage = () => {
   return (
@@ -215,37 +216,7 @@ const Home: NextPage = () => {
         </section>
         <section className={styles.start} id="start">
           <h2 className={styles.subtitle}>Jetzt mehr erfahren</h2>
-          <form className={styles.form}>
-            <label className={styles.form__label}>
-              <span>Deine E-Mail-Adresse</span>
-              <input
-                type="email"
-                placeholder="z.B. supercoder2000@devbuff.de"
-              />
-            </label>
-            <label className={styles.form__label}>
-              <span>Warum möchtest du dabei sein?</span>
-              <textarea
-                placeholder="Erzähle uns, was deine Motivation ist und warum du als Web Developer Freelancer arbeiten möchtest"
-                rows={5}
-              />
-            </label>
-            <label className={styles.form__label}>
-              <span>
-                Wann kannst du starten und wie viel Zeit kannst du pro Woche
-                investieren?
-              </span>
-              <textarea
-                placeholder="Hast du z.B. Verpflichtungen, wodurch du nicht in Vollzeit dabei sein kannst?"
-                rows={5}
-              />
-            </label>
-            <small>
-              Mit dem Absenden des Formulars erkläre ich mich mit der
-              Datenschutzerklärung einverstanden.
-            </small>
-            <input type="submit" value="Mehr erfahren" />
-          </form>
+          <RegistrationForm />
         </section>
       </main>
       <footer className={styles.footer}>
