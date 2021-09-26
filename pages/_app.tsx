@@ -1,6 +1,16 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Plausible from "plausible-tracker";
+
+if (typeof history !== "undefined") {
+  const plausible = Plausible({
+    domain: "devbuff.de",
+    apiHost: `${location.protocol}//${location.host}`,
+  });
+  plausible.enableAutoPageviews();
+  plausible.enableAutoOutboundTracking();
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
