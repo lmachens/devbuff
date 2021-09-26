@@ -10,7 +10,7 @@ export default async function handler(
     throw new Error("DISCORD_WEBHOOK_URL is not set");
   }
 
-  const { email, why, when } = req.body;
+  const { email, why, when, more } = req.body;
   if (
     typeof email !== "string" ||
     typeof why !== "string" ||
@@ -42,6 +42,10 @@ export default async function handler(
         {
           title: "When",
           description: when,
+        },
+        {
+          title: "More",
+          description: more || "",
         },
       ],
     }),

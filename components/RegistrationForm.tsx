@@ -5,6 +5,7 @@ function RegistrationForm() {
   const [email, setEmail] = useState("");
   const [why, setWhy] = useState("");
   const [when, setWhen] = useState("");
+  const [more, setMore] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -19,11 +20,12 @@ function RegistrationForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, why, when }),
+        body: JSON.stringify({ email, why, when, more }),
       });
       setEmail("");
       setWhy("");
       setWhen("");
+      setMore("");
       alert("Danke dir! Wir melden uns bei dir per E-Mail.");
     } catch (error) {
       console.error(error);
@@ -66,6 +68,15 @@ function RegistrationForm() {
           value={when}
           onChange={(event) => setWhen(event.target.value)}
           required
+        />
+      </label>
+      <label className={styles.form__label}>
+        <span>Möchtest du noch etwas mitteilen?</span>
+        <textarea
+          placeholder="Wir freuen uns über jedes Feedback!"
+          rows={5}
+          value={more}
+          onChange={(event) => setMore(event.target.value)}
         />
       </label>
       <small>
