@@ -4,6 +4,7 @@ import Image from "next/image";
 import AppHeader from "../components/AppHeader";
 import Badge from "../components/Badge";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -203,7 +204,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={styles.start} id="start">
-          <h2>Jetzt mehr erfahren</h2>
+          <h2 className={styles.subtitle}>Jetzt mehr erfahren</h2>
           <form className={styles.form}>
             <label className={styles.form__label}>
               <span>Deine E-Mail-Adresse</span>
@@ -237,6 +238,20 @@ const Home: NextPage = () => {
           </form>
         </section>
       </main>
+      <footer className={styles.footer}>
+        <small>
+          © 2021{" "}
+          <a
+            href="https://leon.machens.koeln/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Leon Machens
+          </a>{" "}
+          | Keine Cross-Site trackers oder andere gruseligen Dinge |{" "}
+          <Link href="/legal">Impressum &amp; Datenschutz</Link>
+        </small>
+      </footer>
     </div>
   );
 };
