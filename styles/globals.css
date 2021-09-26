@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "CascadiaCode";
+  font-weight: normal;
+  font-style: normal;
+  src: local(""), url("/fonts/CascadiaCode.woff2") format("woff2"),
+    url("/fonts/CascadiaCode.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""), url("/fonts/OpenSans.woff2") format("woff2"),
+    url("/fonts/OpenSans.ttf") format("truetype");
+  font-display: swap;
+}
+
 *,
 *::after,
 *::before {
@@ -13,6 +30,10 @@
   --color-primary: #0dda95;
   --color-secondary: #337275;
 
+  /* Fonts */
+  --font-text: "Open Sans", sans-serif;
+  --font-headline: "CascadiaCode", Sans-Serif;
+
   /* Misc */
   --border-radius: 0.2rem;
 }
@@ -21,8 +42,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-text);
 }
 
 html {
@@ -58,4 +78,5 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: var(--font-headline);
 }
