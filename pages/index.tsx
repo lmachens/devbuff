@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           <div className={styles.hero__image}>
             <Image
               src="/web-developer.png"
-              alt="Web Developer"
+              alt=""
               layout="responsive"
               width={695}
               height={585}
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           <div>
             <Image
               src="/social.png"
-              alt="Social"
+              alt=""
               layout="responsive"
               width={1587}
               height={1158}
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
           <div className={styles.phase__image}>
             <Image
               src="/support.png"
-              alt="Support"
+              alt=""
               layout="responsive"
               width={1587}
               height={1158}
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
           <div className={styles.phase__image}>
             <Image
               src="/launch-project.png"
-              alt="Capstone"
+              alt=""
               layout="responsive"
               width={1587}
               height={1158}
@@ -150,9 +150,77 @@ const Home: NextPage = () => {
             </a>
           </div>
         </section>
+        <section className={styles.phase}>
+          <div className={styles.phase__image}>
+            <Image
+              src="/recovery.png"
+              alt=""
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
+          <div className={styles.phase__info}>
+            <h2>Die Wochenschwerpunkte</h2>
+            <p>
+              Wir arbeiten agil und passen die Inhalte dem Kurs an. Als
+              Leitfaden kannst du dir aber folgende Wochenschwerpunkte
+              anschauen:
+            </p>
+            <p>
+              Woche 1: HTML, Shell, Git, VSCode, CSS
+              <br />
+              Woche 2: Design, Storybook, CSS Modules
+              <br />
+              Woche 3: JavaScript, Events, DOM-Manipulation
+              <br />
+              Woche 4: API, TypeScript
+              <br />
+              Woche 5: Backend, Node.js, Crypto, MongoDB
+              <br />
+              Woche 6: React, React Hooks
+              <br />
+              Woche 7: React Context, TypeScript Advanced
+              <br />
+              Woche 8: Agile, Kanban, Akquise
+            </p>
+          </div>
+        </section>
+        <section className={styles.phase}>
+          <div className={styles.phase__image}>
+            <Image
+              src="/buy.png"
+              alt=""
+              layout="responsive"
+              width={1587}
+              height={1158}
+              objectFit="contain"
+            />
+          </div>
+          <div className={styles.phase__info}>
+            <h2>Das sind die Kosten</h2>
+            <p>
+              Das Bootcamp wird zwischen 5.000€ und 8.000€ kosten, je nach
+              Anzahl der Teilnehmer und Dauer des Bootcamps.
+            </p>
+            <a href="#start" className="button">
+              Jetzt mehr erfahren
+            </a>
+          </div>
+        </section>
         <section className={styles.team}>
           <h2 className={styles.subtitle}>Dein Coach</h2>
           <div className={styles.coach}>
+            <div className={styles.avatar}>
+              <Image
+                src="/leon.png"
+                alt="Leon Machens"
+                layout="responsive"
+                width={600}
+                height={607}
+              />
+            </div>
             <div>
               <p>
                 <span className={styles.coach__catch}>Hi 👋, ich bin Leon</span>
@@ -198,55 +266,6 @@ const Home: NextPage = () => {
                 .
               </p>
             </div>
-            <div className={styles.avatar}>
-              <Image
-                src="/leon.png"
-                alt="Leon Machens"
-                layout="responsive"
-                width={600}
-                height={607}
-              />
-            </div>
-          </div>
-        </section>
-        <section className={styles.phase}>
-          <div className={styles.phase__image}>
-            <Image
-              src="/recovery.png"
-              alt="Capstone"
-              layout="responsive"
-              width={1587}
-              height={1158}
-              objectFit="contain"
-            />
-          </div>
-          <div className={styles.phase__info}>
-            <h2>Das wirst du lernen</h2>
-            <p>
-              Wir arbeiten agil und passen die Inhalte dem Kurs an. Als
-              Leitfaden kannst du dir aber folgende Wochenschwerpunkte
-              anschauen:
-            </p>
-            <p>
-              Woche 1: HTML, Shell, Git, VSCode, CSS
-              <br />
-              Woche 2: Design, Storybook, CSS Modules
-              <br />
-              Woche 3: JavaScript, Events, DOM-Manipulation
-              <br />
-              Woche 4: API, TypeScript
-              <br />
-              Woche 5: Backend, Node.js, Crypto, MongoDB
-              <br />
-              Woche 6: React, React Hooks
-              <br />
-              Woche 7: React Context, TypeScript Advanced
-              <br />
-              Woche 8: Agile, Kanban, Akquise
-            </p>
-            <a href="#start" className="button">
-              Jetzt mehr erfahren
-            </a>
           </div>
         </section>
         <section className={styles.start} id="start">

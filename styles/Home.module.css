@@ -34,6 +34,7 @@
 }
 
 .subtitle {
+  margin-top: 1rem;
   font-size: 2.5rem;
 }
 
@@ -81,6 +82,7 @@
   display: grid;
   place-items: center;
   row-gap: 1rem;
+  padding: 2rem 0;
 }
 
 .coach__catch {
@@ -131,7 +133,8 @@
     text-align: left;
   }
 
-  .phase:nth-of-type(even) > :first-child {
+  .phase:nth-of-type(even) > :first-child,
+  .coach > :first-child {
     order: 1;
   }
 

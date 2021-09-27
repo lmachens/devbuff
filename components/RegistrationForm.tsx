@@ -1,11 +1,13 @@
 import { FormEvent, useState } from "react";
 import styles from "../styles/RegistrationForm.module.css";
+import Link from "next/link";
+import useSessionState from "./useSessionState";
 
 function RegistrationForm() {
-  const [email, setEmail] = useState("");
-  const [why, setWhy] = useState("");
-  const [when, setWhen] = useState("");
-  const [more, setMore] = useState("");
+  const [email, setEmail] = useSessionState<string>("email", "");
+  const [why, setWhy] = useSessionState<string>("why", "");
+  const [when, setWhen] = useSessionState<string>("when", "");
+  const [more, setMore] = useSessionState<string>("more", "");
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -80,8 +82,8 @@ function RegistrationForm() {
         />
       </label>
       <small>
-        Mit dem Absenden des Formulars erkläre ich mich mit der
-        Datenschutzerklärung einverstanden.
+        Mit dem Absenden des Formulars erkläre ich mich mit der{" "}
+        <Link href="/legal">Datenschutzerklärung</Link> einverstanden.
       </small>
       <input
         type="submit"
