@@ -5,6 +5,7 @@ import Badge from "../components/Badge";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import RegistrationForm from "../components/RegistrationForm";
+import Review from "../components/Review";
 
 const Home: NextPage = () => {
   return (
@@ -266,6 +267,32 @@ const Home: NextPage = () => {
                 .
               </p>
             </div>
+          </div>
+          <div>
+            <Review
+              message="Leon Machens ist ein großartiger Lehrer und Coach. Eine absolute Empfehlung für diejenigen, die Programmieren lernen wollen."
+              author="Mona Vorschulze"
+              source="LinkedIn"
+              link="https://www.linkedin.com/posts/activity-6829744023838695424-GBx1"
+            />
+            <Review
+              message="Ich habe den Kurs bei den Coaches Leon und Philipp gemacht und kann die beiden nur wärmstens weiterempfehlen."
+              author="Stefanie Gierszewski"
+              source="Google"
+              link="https://goo.gl/maps/33pLmVMdTCFAogZX8"
+            />
+            <Review
+              message="Die Coaches in Köln (Leon und Philipp) sind der Hammer."
+              author="Nicolas Becker"
+              source="Google"
+              link="https://goo.gl/maps/ijWXBhjCWtr2intN8"
+            />
+            <Review
+              message="Leon (Head-Coach) und Philipp (Assistant Coach) haben spannende Übungsaufgaben, Challenges und Unterrichtseinheiten für euch vorbereitet in denen ihr Schritt für Schritt alles wichtige lernt, um in den neuen Job zu starten."
+              author="René Schmitz"
+              source="Google"
+              link="https://goo.gl/maps/izeNqWLHXa6Lsov16"
+            />
           </div>
         </section>
         <section className={styles.start} id="start">
