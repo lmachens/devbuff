@@ -202,8 +202,8 @@ const Home: NextPage = () => {
           <div className={styles.phase__info}>
             <h2>Das sind die Kosten</h2>
             <p>
-              Das Bootcamp wird zwischen 5.000€ und 8.000€ kosten, je nach
-              Anzahl der Teilnehmer und Dauer des Bootcamps.
+              Das Bootcamp wird zwischen 5.000€ und 7.000€ kosten, je nach der
+              Dauer des Bootcamps.
             </p>
             <a href="#start" className="button">
               Jetzt mehr erfahren
