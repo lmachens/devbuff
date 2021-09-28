@@ -22,6 +22,7 @@
 .hero__image {
   position: relative;
   display: grid;
+  padding: 1em;
 }
 
 .hero__start {

@@ -6,6 +6,13 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import RegistrationForm from "../components/RegistrationForm";
 import Review from "../components/Review";
+import webDevelopmentSrc from "../public/web-developer.png";
+import socialSrc from "../public/social.png";
+import supportSrc from "../public/support.png";
+import launchProjectSrc from "../public/launch-project.png";
+import recoverySrc from "../public/recovery.png";
+import buySrc from "../public/buy.png";
+import leonSrc from "../public/leon.png";
 
 const Home: NextPage = () => {
   return (
@@ -27,11 +34,9 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.hero__image}>
             <Image
-              src="/web-developer.png"
+              src={webDevelopmentSrc}
               alt=""
               layout="responsive"
-              width={695}
-              height={585}
               objectFit="contain"
             />
           </div>
@@ -49,11 +54,9 @@ const Home: NextPage = () => {
         <section className={styles.phase}>
           <div>
             <Image
-              src="/social.png"
+              src={socialSrc}
               alt=""
               layout="responsive"
-              width={1587}
-              height={1158}
               objectFit="contain"
             />
           </div>
@@ -82,11 +85,9 @@ const Home: NextPage = () => {
         <section className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
-              src="/support.png"
+              src={supportSrc}
               alt=""
               layout="responsive"
-              width={1587}
-              height={1158}
               objectFit="contain"
             />
           </div>
@@ -125,11 +126,9 @@ const Home: NextPage = () => {
         <section className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
-              src="/launch-project.png"
+              src={launchProjectSrc}
               alt=""
               layout="responsive"
-              width={1587}
-              height={1158}
               objectFit="contain"
             />
           </div>
@@ -154,11 +153,9 @@ const Home: NextPage = () => {
         <section className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
-              src="/recovery.png"
+              src={recoverySrc}
               alt=""
               layout="responsive"
-              width={1587}
-              height={1158}
               objectFit="contain"
             />
           </div>
@@ -191,11 +188,9 @@ const Home: NextPage = () => {
         <section className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
-              src="/buy.png"
+              src={buySrc}
               alt=""
               layout="responsive"
-              width={1587}
-              height={1158}
               objectFit="contain"
             />
           </div>
@@ -214,13 +209,7 @@ const Home: NextPage = () => {
           <h2 className={styles.subtitle}>Dein Coach</h2>
           <div className={styles.coach}>
             <div className={styles.avatar}>
-              <Image
-                src="/leon.png"
-                alt="Leon Machens"
-                layout="responsive"
-                width={600}
-                height={607}
-              />
+              <Image src={leonSrc} alt="Leon Machens" layout="responsive" />
             </div>
             <div>
               <p>
