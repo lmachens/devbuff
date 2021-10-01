@@ -39,6 +39,40 @@
   --border-radius: 0.2rem;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #fff;
+    --color-text: #080a0b;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #080a0b;
+    --color-text: #fff;
+  }
+}
+
+.light {
+  --color-background: #fff;
+  --color-text: #080a0b;
+}
+
+.dark {
+  --color-background: #080a0b;
+  --color-text: #fff;
+}
+
+@media (prefers-color-scheme: light) {
+  .logo {
+    filter: invert(1);
+  }
+}
+
+.light .logo {
+  filter: invert(1);
+}
+
 html,
 body {
   padding: 0;
