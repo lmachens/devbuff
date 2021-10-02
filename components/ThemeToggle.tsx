@@ -7,7 +7,15 @@ import styles from "../styles/ThemeToggle.module.css";
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 function ThemeToggle() {
-  const [darkMode, setDarkMode] = useState(() => prefersDarkScheme.matches);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (document.body.classList.contains("dark")) {
+      return true;
+    }
+    if (document.body.classList.contains("light")) {
+      return false;
+    }
+    return prefersDarkScheme.matches;
+  });
 
   useEffect(() => {
     function handler(event: MediaQueryListEvent) {
