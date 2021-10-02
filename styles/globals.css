@@ -44,12 +44,20 @@
     --color-background: #fff;
     --color-text: #080a0b;
   }
+
+  .logo {
+    filter: invert(1);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #080a0b;
     --color-text: #fff;
+  }
+
+  .logo {
+    filter: none;
   }
 }
 
@@ -63,14 +71,12 @@
   --color-text: #fff;
 }
 
-@media (prefers-color-scheme: light) {
-  .logo {
-    filter: invert(1);
-  }
-}
-
 .light .logo {
   filter: invert(1);
+}
+
+.dark .logo {
+  filter: none;
 }
 
 html,
