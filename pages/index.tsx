@@ -13,13 +13,14 @@ import launchProjectSrc from "../public/launch-project.png";
 import recoverySrc from "../public/recovery.png";
 import buySrc from "../public/buy.png";
 import leonSrc from "../public/leon.png";
+import AnimatedElement from "../components/AnimatedElement";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <AppHeader />
       <main className={styles.main}>
-        <section className={styles.hero}>
+        <AnimatedElement type="section" className={styles.hero}>
           <div className={styles.hero__info}>
             <h2 className={styles.title}>Dein Weg zum Web Developer</h2>
 
@@ -40,9 +41,9 @@ const Home: NextPage = () => {
               objectFit="contain"
             />
           </div>
-        </section>
+        </AnimatedElement>
 
-        <section className={styles.info}>
+        <AnimatedElement type="section" className={styles.info}>
           <h2 className={styles.subtitle}>Deine Karriere</h2>
           <p>
             Du lernst wie du als Freelancer durchstartest, spannende Projekte in
@@ -50,8 +51,8 @@ const Home: NextPage = () => {
             Egal, ob du bereits Erfahrungen als Web Developer hast oder nicht,
             das Bootcamp bereitet dich perfekt auf deine Zukunft vor.
           </p>
-        </section>
-        <section className={styles.phase}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.phase}>
           <div>
             <Image
               src={socialSrc}
@@ -81,8 +82,8 @@ const Home: NextPage = () => {
               allerdings solltest du dich auch auf Englisch verständigen können.
             </p>
           </div>
-        </section>
-        <section className={styles.phase}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
               src={supportSrc}
@@ -122,8 +123,8 @@ const Home: NextPage = () => {
               <Badge>Git</Badge>
             </p>
           </div>
-        </section>
-        <section className={styles.phase}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
               src={launchProjectSrc}
@@ -149,8 +150,8 @@ const Home: NextPage = () => {
               Jetzt mehr erfahren
             </a>
           </div>
-        </section>
-        <section className={styles.phase}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
               src={recoverySrc}
@@ -184,8 +185,8 @@ const Home: NextPage = () => {
               Woche 8: Agile, Kanban, Akquise
             </p>
           </div>
-        </section>
-        <section className={styles.phase}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.phase}>
           <div className={styles.phase__image}>
             <Image
               src={buySrc}
@@ -204,8 +205,8 @@ const Home: NextPage = () => {
               Jetzt mehr erfahren
             </a>
           </div>
-        </section>
-        <section className={styles.team}>
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.team}>
           <h2 className={styles.subtitle}>Dein Coach</h2>
           <div className={styles.coach}>
             <div className={styles.avatar}>
@@ -283,13 +284,13 @@ const Home: NextPage = () => {
               link="https://goo.gl/maps/izeNqWLHXa6Lsov16"
             />
           </div>
-        </section>
-        <section className={styles.start} id="start">
+        </AnimatedElement>
+        <AnimatedElement type="section" className={styles.start} id="start">
           <h2 className={styles.subtitle}>Jetzt mehr erfahren</h2>
           <RegistrationForm />
-        </section>
+        </AnimatedElement>
       </main>
-      <footer className={styles.footer}>
+      <AnimatedElement type="footer" className={styles.footer}>
         <small>
           © 2021{" "}
           <a
@@ -303,7 +304,7 @@ const Home: NextPage = () => {
           <br />
           Ohne Cross-Site-Trackers oder andere gruseligen Dinge ❤️
         </small>
-      </footer>
+      </AnimatedElement>
     </div>
   );
 };
