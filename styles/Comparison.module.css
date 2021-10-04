@@ -1,0 +1,24 @@
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(361px, 1fr));
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.comparison ul {
+  list-style: none;
+  text-align: left;
+}
+
+.bad li:before {
+  content: "😈";
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.good li:before {
+  content: "😇";
+  margin-right: 1em;
+}

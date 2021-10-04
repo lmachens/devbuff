@@ -30,7 +30,6 @@
 }
 
 .info {
-  padding: 2rem 0;
   margin: 0 auto;
 }
 
@@ -42,7 +41,6 @@
 .phase {
   display: grid;
   row-gap: 2rem;
-  padding: 2rem 0;
 }
 
 .phase__image {
@@ -64,7 +62,6 @@
 .start {
   display: grid;
   place-items: center;
-  padding: 2rem 0;
   row-gap: 1rem;
 }
 

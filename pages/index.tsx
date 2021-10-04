@@ -14,6 +14,7 @@ import recoverySrc from "../public/recovery.png";
 import buySrc from "../public/buy.png";
 import leonSrc from "../public/leon.png";
 import AnimatedElement from "../components/AnimatedElement";
+import Comparison from "../components/Comparison";
 
 const Home: NextPage = () => {
   return (
@@ -65,7 +66,9 @@ const Home: NextPage = () => {
             <h2>1. Stell dich vor</h2>
             <p>
               Wir möchten mit Talenten arbeiten, die hoch motiviert sind und das
-              Bootcamp mit erstaunlichen Ergebnissen absolvieren.
+              Bootcamp mit erstaunlichen Ergebnissen absolvieren. Für eine
+              perfekte Unterstütztung, ist die maximale Anzahl an
+              Teilnehmer*innen auf <b>10</b> limitiert.
             </p>
             <p>
               Aus diesem Grund möchten wir mit dir über deine Motivation
@@ -103,7 +106,7 @@ const Home: NextPage = () => {
               In den ersten 8 Wochen wirst du Montag bis Freitag von ca. 9-17
               Uhr alle wichtigen Grundlagen kennenlernen und in Praxisprojekten
               anwenden. Im Pair-Programming arbeitest du mit den anderen
-              Kursteilnehmer*innen zusammen um perfekt im Team arbeiten zu
+              Kursteilnehmer*innen zusammen, um perfekt im Team arbeiten zu
               können.
             </p>
             <p>
@@ -198,7 +201,7 @@ const Home: NextPage = () => {
           <div className={styles.phase__info}>
             <h2>Das sind die Kosten</h2>
             <p>
-              Das Bootcamp wird zwischen 5.000€ und 7.000€ kosten, je nach der
+              Das Bootcamp wird zwischen 5.000€ und 7.500€ kosten, je nach der
               Dauer des Bootcamps.
             </p>
             <a href="#start" className="button">
@@ -206,6 +209,7 @@ const Home: NextPage = () => {
             </a>
           </div>
         </AnimatedElement>
+        <Comparison />
         <AnimatedElement type="section" className={styles.team}>
           <h2 className={styles.subtitle}>Dein Coach</h2>
           <div className={styles.coach}>
