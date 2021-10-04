@@ -6,9 +6,9 @@ function Comparison() {
     <AnimatedElement type="section">
       <h2>Warum DevBuff?</h2>
       <p>
-        Anders als andere Bootcamps, brauchen wir auf Grund von einem hohen Grad
-        an Automatisierung kein großes Team und können weitere Kosten durch
-        jahrelanger Erfahrung deutlich reduzieren.
+        Anders als andere Anbieter, brauchen wir auf Grund von viel
+        Automatisierung kein großes Team und können viele weitere Kosten durch
+        jahrelange Erfahrung deutlich reduzieren. Davon profitierst du!
       </p>
       <div className={styles.comparison}>
         <section className={styles.bad}>
@@ -18,9 +18,6 @@ function Comparison() {
             <li>10-20 Teilnehmer*innen</li>
             <li>Keine Wahl der Coaches</li>
             <li>Generische Kursinhalte</li>
-            <li>Strenge Verträge</li>
-            <li>Intransparentes Geschäftsmodell</li>
-            <li>Fragwürdige Datenschutzbedingungen</li>
             <li>Kaum öffentlicher Quellcode</li>
           </ul>
         </section>
@@ -31,9 +28,6 @@ function Comparison() {
             <li>5-10 Teilnehmer*innen</li>
             <li>Du weißt bei welchem Coach du starten wirst</li>
             <li>Angepasste Inhalte an den Kurs</li>
-            <li>Einfache Rechnung ohne Vertrag</li>
-            <li>Kein verstecktes Geschäftsmodell</li>
-            <li>Deine Daten, deine Kontrolle</li>
             <li>Fast nur Open Source</li>
           </ul>
         </section>
